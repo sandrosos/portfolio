@@ -277,7 +277,7 @@ function animateParticules(x, y) {
   })
     .add({
     targets: circle,
-    radius: anime.random(700, 360),
+    radius: anime.random(700, 700),
     lineWidth: 0,
     alpha: {
       value: 0,
