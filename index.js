@@ -284,7 +284,7 @@ function animateParticules(x, y) {
       easing: 'linear',
       duration: anime.random(600, 800),  
     },
-    duration: anime.random(1200, 1800),
+    duration: 15000,
     easing: 'easeOutExpo',
     update: renderParticule,
     offset: 0
