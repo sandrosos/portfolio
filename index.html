@@ -1,36 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandro Oliveira Portfolio</title>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <meta name="description" content="Portfolio for Sandro Oliveira, a freelancer web developer.">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <header>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+            <label for="nav-check">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+        </div>
+        <ul id="menu">
+            <li id="home-menu"><span class="color-change active">Inicio</span></li>
+            <li id="projects-menu"><span class="color-change">Projetos</span></li>
+            <li id="skills-menu"><span class="color-change">Skills</span></li>
+            <li id="contact-menu"><span class="color-change">Contato</span></li>
+        </ul>
+    </header>
+
     <canvas id="demo-canvas"></canvas>
+
     <canvas id="demo-canvas2"></canvas>
-    <div class="projects">
+
+    <div class="home visible">
+
+        <p>
+            Olá! Eu sou o Sandro, um desenvolvedor web com 6 meses de experiência prática em desenvolvimento web. 
+            Tenho um amor profundo por criar sites e aplicações web bonitos e funcionais que atendam às expectativas dos meus clientes. 
+            Como freelancer, tive a oportunidade de trabalhar em uma variedade de projetos e 
+            estou empolgado para compartilhar minha jornada com você.
+        </p>
+
+        <img src="/img/312276664_711526204014199_4263157422405326321_n.jpg"  alt="a photo of me">
+    </div>
+
+    <div class="projects hidden">
         <div class="project" id="ecommerce">
-            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <p>elizaida.com</p>
-            <a href="elizaida.com">elizaida</a>
+            <a href="https://www.elizaida.com">
+                <img src="img/elizaida.JPG" alt="Elizaida screenshot" loading="lazy">
+                <br>
+                <p>elizaida.com</p>
+                <p>elizaida é um website de vendas feito com WooCommerce e WordPress.</p>
+            </a>
         </div>
 
         <div class="project" id="landing">
-            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <p>landing page</p>
-            <a href="">landing page</a>
+            <a href="landingpage/landing.html">
+                <img src="img/landing.JPG" alt="Landing page screenshot" loading="lazy">
+                <br>
+                <p>Landing page</p>
+                <p>Esta landing page foi feita por mim em HTML e CSS, sendo o design proveniente do site Loopple.</p>
+            </a>
         </div>
 
         <div class="project" id="javascript-showcase">
-            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <p>cool javascript</p>
-            <a href="">cool javascript</a>
+            
+                <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="placeholder image" loading="lazy">
+                <br>
+                <p>Sobre construção!</p>
+                <p>Mais projetos serão adicionados ao portfolio no futuro.</p>
+            
         </div>
     </div>
     
+    <div class="skills hidden">
+        <div class="skill">
+            <img src="/svg/js.svg" class="svg" alt="javascript logo" loading="lazy">
+            <p>
+                Possuo uma experiência considerável com JavaScript, abrangendo tanto ajustes no front-end quanto algumas aplicações no back-end. Tenho familiaridade em criar interfaces dinâmicas e responsivas, manipular eventos do usuário e implementar lógica e funcionalidades no lado do servidor.
+            </p>
+        </div>
+        <div class="skill">
+            <img src="/svg/wp.svg" alt="WordPress logo" loading="lazy" class="svg">
+            <p>
+                Tenho uma sólida experiência e profundo entendimento do WordPress. Sou capaz de configurar temas, plugins e aprimorar o desempenho e a segurança de websites desenvolvidos com WordPress.
+            </p>
+        </div>
+        <div class="skill">
+            <img src="/svg/node.svg" loading="lazy" alt="Node JS logo" class="svg">
+            <p>
+                Possuo uma experiência limitada com Node.js, mas já concluí alguns projetos utilizando essa tecnologia anteriormente.
+            </p>
+        </div>
+        <div class="skill">
+            <img src="/svg/php.svg" loading="lazy" alt="PHP logo" class="svg">
+            <p>
+                Adquiri habilidades em PHP por meio da realização de projetos no WordPress e também por meio de cursos.
+            </p>
+        </div>
+        <div class="skill">
+            <div id="html-css-svg">
+                <img src="/svg/html.svg" loading="lazy" alt="HTML logo" class="svg">
+                <img src="/svg/css.svg" loading="lazy" alt="CSS logo" class="svg">
+                
+            </div>
+            <p>
+                Tenho amplo conhecimento em HTML e CSS, e este portfólio em si é evidência da minha experiência sólida com os fundamentos do desenvolvimento web.
+            </p>
+        </div>
+    </div>
+
+    <form class="contact-form hidden" action="https://api.web3forms.com/submit" method="POST">
+
+        <p>
+            Olá, se você estiver interessado em entrar em contato comigo para trabalhos freelance, para contratação, ou se simplesmente tiver uma pergunta, sinta-se à vontade para me enviar um e-mail.
+        </p>
+        <p class="social-links">
+            <a href="https://www.upwork.com/your-profile-link"><img src="/svg/upwork-tile.svg" alt="upwork icon" loading="lazy"></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile"><img src="/svg/linkedin-tile.svg" alt="linkedin icon" loading="lazy"></a>
+        </p>
+
+
+
+        <input type="hidden" name="access_key" value="0435e51e-4868-4163-83ed-b78e1d337246">
+        <input type="hidden" name="redirect" value="https://sandrosos.github.io/portfolio/thank-you.html">
+    
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" autocomplete="given-name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+        
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+        <button type="submit">Mandar Email</button>
+    
+    </form>
+    
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+          
+    <script src="/3rds/anime.js"></script>
+    <script src="/3rds/TweenMax.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
